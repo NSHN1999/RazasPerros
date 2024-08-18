@@ -1,4 +1,3 @@
-import PropTypes from "react";
 import { Icon, List } from "@mui/material";
 import { ListItemRaza } from "./ListItemRaza";
 import { useFetch } from "../helpers";
@@ -33,7 +32,7 @@ export const ListRazas = ({ handleListImage }) => {
             className="scrollbar-none"
             sx={{
                 height: 350,
-                width: '90%',
+                width: '100%',
                 p: 0,
                 my: 1,
                 overflowY:'scroll',

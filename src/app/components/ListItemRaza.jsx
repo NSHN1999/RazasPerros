@@ -43,7 +43,7 @@ export const ListItemRaza = ({ raza, subRazas, handleListImage }) => {
                 {
                     subRazas.map((subRaza) => (
                         <ListItemButton 
-                            sx={{ml:10, mt: 0.5, borderRadius: 10, backgroundColor:'#669bbc', color: '#FFF', ':hover': {color: '#457b9d', backgroundColor: '#a2d2ff'}}} key={subRaza}
+                            sx={{ml:{sm: 15, xs: 5}, mt: 0.5, borderRadius: 10, backgroundColor:'#669bbc', color: '#FFF', ':hover': {color: '#457b9d', backgroundColor: '#a2d2ff'}}} key={subRaza}
                             onClick={() => handleListImage(raza + ' ' + subRaza)}
                         >
                             <ListItemText primary={raza[0].toUpperCase() + raza.slice(1) + ' ' + subRaza[0].toUpperCase() + subRaza.slice(1)}/>

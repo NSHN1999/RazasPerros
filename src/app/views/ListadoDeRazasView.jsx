@@ -13,7 +13,7 @@ export const ListadoDeRazasView = () => {
 
     return (
         <>
-            <Typography sx={{pb: 3}} variant="h3">Listado de Razas</Typography>
+            <Typography sx={{pb: 3}} variant="h4">Listado de Razas</Typography>
             <ListRazas 
                 handleListImage={ handleListImage }
             />

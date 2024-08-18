@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { ImageList, ImageListItem, Typography } from "@mui/material";
+import { Grid, ImageList, ImageListItem, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { getImagesByRazas } from "../helpers/getImagesByRazas";
 
@@ -19,8 +19,21 @@ export const GaleriaImagenes = ({ razasImages }) => {
     },[razasImages]);
 
     return (
-        <>
-            <Typography sx={{mt: 3, fontWeight: 2}} variant='h4'>{titulo.replace('/', ' ')}</Typography>
+        <Grid
+            container
+            display='flex'
+            direction='column'
+            justifyContent='center'
+            alignItems='center'
+        >
+            <Typography 
+                sx={{
+                    mt: 3,  
+                }} 
+                variant="h5"
+            >
+                {titulo.replace('/', ' ')}
+            </Typography>
             <ImageList
                 className="scrollbar-none"
                 sx={{width: '90%', height: 400}}
@@ -38,7 +51,7 @@ export const GaleriaImagenes = ({ razasImages }) => {
                     ))
                 }
             </ImageList>
-        </>
+        </Grid>
     );
 };
 

@@ -104,7 +104,7 @@ export const NavBar = () => {
                 <Grid 
                     marginX={2}
                 >   
-                    <Link component='a' href="#">
+                    <Link component='a' href="https://github.com/NSHN1999/RazasPerros">
                         <IconButton>
                             <GitHub fontSize="large" sx={{color: 'white'}}/>
                         </IconButton>

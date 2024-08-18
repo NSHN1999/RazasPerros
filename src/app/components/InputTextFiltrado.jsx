@@ -29,9 +29,9 @@ export const InputTextFiltrado = ({ razas, setRazasFilter }) => {
             component='form'
             container
             direction='row'
+            wrap="nowrap"
             alignItems='center'
             justifyContent='end'
-            paddingX={2}
         >
             <Icon sx={{width: 50, height: 50, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                 <Search fontSize="large"/>
@@ -40,6 +40,8 @@ export const InputTextFiltrado = ({ razas, setRazasFilter }) => {
                 onChange={onInputChange}
                 value={valorInput}
                 label="Buscar raza"
+                fullWidth
+                size="small"
             />
         </Grid>
     );
